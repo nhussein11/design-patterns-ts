@@ -2,6 +2,8 @@
 
 This repository is to study and practice some dessign patterns using typescipt
 
+[Source] https://refactoring.guru
+
 ## Creational Design Patterns
 
 Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
