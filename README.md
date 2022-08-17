@@ -2,7 +2,7 @@
 
 This repository is to study and practice some dessign patterns using typescipt
 
-## Creational Design Patterns:
+## Creational Design Patterns
 
 Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 - Factory Method
