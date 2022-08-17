@@ -1,3 +1,3 @@
-# Design Patterns usign Typescript
+# Design Patterns - Typescript
 
 This repository is to study and practice some dessign patterns using typescipt
