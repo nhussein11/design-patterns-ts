@@ -4,6 +4,9 @@
  * implementation of this method.
  */
  abstract class Creator {
+    static createObject(arg0: string) {
+        throw new Error("Method not implemented.");
+    }
     /**
      * Note that the Creator may also provide some default implementation of the
      * factory method.
