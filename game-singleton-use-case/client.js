@@ -1,17 +1,15 @@
-"use strict";
 // Singleton Use Case Example Code
-Object.defineProperty(exports, "__esModule", { value: true });
-var game1_1 = require("./game1");
-var game2_1 = require("./game2");
-var game3_1 = require("./game3");
+import { Game1 } from './game1';
+import { Game2 } from './game2';
+import { Game3 } from './game3';
 // The Client
 // Despite all games instantiating a leaderboard, they all point
 // to the same memory object since the leaderboard is a singleton.
-var GAME1 = new game1_1.Game1();
+const GAME1 = new Game1();
 GAME1.addWinner(2, 'Cosmo');
-var GAME2 = new game2_1.Game2();
+const GAME2 = new Game2();
 GAME2.addWinner(3, 'Sean');
-var GAME3 = new game3_1.Game3();
+const GAME3 = new Game3();
 GAME3.addWinner(1, 'Emmy');
 GAME1.leaderboard.print();
 GAME2.leaderboard.print();

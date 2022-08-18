@@ -1,4 +1,3 @@
-"use strict";
 // A Leaderboard Singleton Class
 var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
     if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
@@ -6,26 +5,23 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _Leaderboard_table;
-Object.defineProperty(exports, "__esModule", { value: true });
-var Leaderboard = /** @class */ (function () {
-    function Leaderboard() {
+export default class Leaderboard {
+    constructor() {
         _Leaderboard_table.set(this, {});
         if (Leaderboard.instance) {
             return Leaderboard.instance;
         }
         Leaderboard.instance = this;
     }
-    Leaderboard.prototype.addWinner = function (position, name) {
+    addWinner(position, name) {
         __classPrivateFieldGet(this, _Leaderboard_table, "f")[position] = name;
-    };
-    Leaderboard.prototype.print = function () {
+    }
+    print() {
         console.log('-----------Leaderboard-----------');
-        for (var key in __classPrivateFieldGet(this, _Leaderboard_table, "f")) {
-            console.log("|\t".concat(key, "\t|\t").concat(__classPrivateFieldGet(this, _Leaderboard_table, "f")[key], "\t|"));
+        for (const key in __classPrivateFieldGet(this, _Leaderboard_table, "f")) {
+            console.log(`|\t${key}\t|\t${__classPrivateFieldGet(this, _Leaderboard_table, "f")[key]}\t|`);
         }
         console.log();
-    };
-    return Leaderboard;
-}());
-exports.default = Leaderboard;
+    }
+}
 _Leaderboard_table = new WeakMap();
