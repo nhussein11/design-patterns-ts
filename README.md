@@ -43,3 +43,13 @@ If your code has access to the Singleton class, then it’s able to call the Sin
     2) The Singleton object can be mutable. Flyweight objects are immutable.
 
 - Abstract Factories, Builders and Prototypes can all be implemented as Singletons.
+
+
+### Links
+[SINGLETON | PATRONES de DISEÑO](https://www.youtube.com/watch?v=GGq6s7xhHzY&ab_channel=BettaTech)
+[Curso de Patrones de diseño - 2 Singleton](https://www.youtube.com/watch?v=gocJeOHtj9w&ab_channel=MitoCode)
+
+Pattern or Antipattern?
+
+[The Clean Code Talks - "Global State and Singletons"](https://www.youtube.com/watch?v=-FRm3VPhseI&t=0s&ab_channel=GoogleTechTalks)
+[¿Singleton es un antipatrón? | #4 Patrones de Diseño](https://www.youtube.com/watch?v=7g39JuMY2kc&ab_channel=ManuelZapata)
