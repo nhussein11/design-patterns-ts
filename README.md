@@ -41,3 +41,9 @@ Following this approach, we can extract the color-related code into its own clas
 ### Important!
 The Bridge pattern should use composition instead of inheritance. This means that you assign the relationship when the object is created at runtime rather than hard coded in the class definition.
 ``` CAR = new Car(EngineA) rather than class Car extends EngineA ``` 
+
+### Summary
+- Use when you want to separate a solution where the abstraction and implementation may be tightly coupled, and you want to break it up into smaller conceptual parts.
+- Once you have added the bridge abstraction, you should be able to extend each side of it separately without breaking the other.
+- Also, once the bridge abstraction exists, you can more easily create extra concrete implementations for other similar products that may also happen to be split across similar conceptual lines.
+- The Bridge pattern is similar to the adapter pattern except in the intent that you developed it. The bridge is an approach to refactor already existing code, whereas the adapter adapts to the existing code through its existing interfaces and methods without changing the internals.
