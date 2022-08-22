@@ -37,3 +37,7 @@ Following this approach, we can extract the color-related code into its own clas
 - Use the Bridge if you need to be able to switch implementations at runtime.
     -        Although it’s optional, the Bridge pattern lets you replace the implementation object inside the abstraction. It’s as easy as assigning a new value to a field.
     By the way, this last item is the main reason why so many people confuse the Bridge with the Strategy pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed. 
+
+### Important!
+The Bridge pattern should use composition instead of inheritance. This means that you assign the relationship when the object is created at runtime rather than hard coded in the class definition.
+``` CAR = new Car(EngineA) rather than class Car extends EngineA ``` 
