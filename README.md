@@ -55,3 +55,14 @@ Other GUI elements, such as menus, shortcuts or entire dialogs, can be implement
     To be able to revert operations, you need to implement the history of performed operations. The command history is a stack that contains all executed command objects along with related backups of the application’s state.
     This method has two drawbacks. First, it isn’t that easy to save an application’s state because some of it can be private. This problem can be mitigated with the Memento pattern.
     Second, the state backups may consume quite a lot of RAM. Therefore, sometimes you can resort to an alternative implementation: instead of restoring the past state, the command performs the inverse operation. The reverse operation also has a price: it may turn out to be hard or even impossible to implement.
+
+Other uses:
+
+-   GUI Buttons, menus
+-   Macro recording
+-   Multi-level undo/redo
+-   Networking - send whole command objects across a network, even as a batch
+-   Parallel processing or thread pools
+-   Transactional behavior
+-   Wizards
+
